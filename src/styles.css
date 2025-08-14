@@ -1,0 +1,22 @@
+:root {
+  font-size: 16px;
+  --main-color: #2E4052;
+  --top-color: #92c970;
+  --center-color: #fffdec;
+  --bottom-color: #ffbadf;
+  --background-color: #56CBF9;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font: inherit;
+}
