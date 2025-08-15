@@ -96,6 +96,7 @@ nav > button {
   justify-content: center;
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
+  font-family: 'Yozakura Light', Arial, Helvetica, sans-serif;
 }
 
 nav > button:hover {
@@ -131,4 +132,27 @@ nav > button:last-child {
   grid-row: 2 / 3;
   background-image: url('./img/dango.png');
   background-size: cover;
+  min-height: calc(100vh - 6rem);
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 8rem;
 }
+
+#content > div {
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#content img {
+  width: 20vw;
+  height: auto;
+}
+
+#content > div > div {
+  font-size: 2rem;
+  color: var(--center-color);
+  text-shadow: 1px 1px 2px var(--background-color);
+}
+
