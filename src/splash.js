@@ -1,30 +1,25 @@
-import dangoImg from './img/dango.png';
-
 const createSplash = (function() {
   function create() {
+    // Select content div already on page
     const content = document.querySelector('#content');
-    const div1 = document.createElement('div');
-    const div2 = document.createElement('div');
-    const div3 = document.createElement('div');
-    const image1 = document.createElement('img');
-    const image2 = document.createElement('img');
-    const image3 = document.createElement('img');
-    image1.src = dangoImg;
-    image2.src = dangoImg;
-    image3.src = dangoImg;
-    const text1 = document.createElement('div');
-    const text2 = document.createElement('div');
-    const text3 = document.createElement('div');
-    text1.textContent = "Text"
-    text2.textContent = "Text"
-    text3.textContent = "Text"
-    div1.append(image1, text1);
-    div2.append(text2, image2);
-    div3.append(image3, text3);
-    content.append(div1, div2, div3);
 
+    // Create textcontainer for splash
+    const textContainer = document.createElement('div');
+    // Prepare text content for different elements
+    const contentCreator = {
+      title: 'Welcome to Three Dango Brothers',
+      text1: 'Step into a cozy corner of Japan where tradition meets comfort. At Three Dango Brothers, we celebrate the simple joy of freshly made dango, soft, chewy rice dumplings glazed, grilled, and served with heart.',
+      text2: 'text', 'Whether you\'re craving the sweet harmony of sanshoku dango, the rich savor of mitarashi, or a seasonal specialty, our skewers are crafted to bring people together, just like the brothers in the song that inspired our name.',
+      text3: 'text', 'Come share a skewer (or three) and discover why dango has been a favorite treat for generations.',
+    }
+    // Create elements, add text content and append them to the container
+    for (const key in contentCreator) {
+      const element = document.createElement('p');
+      element.textContent = contentCreator[key];
+      textContainer.appendChild(element);
+    }
+    content.appendChild(textContainer);
     
-
     console.log("SPLASH!");
   }
 

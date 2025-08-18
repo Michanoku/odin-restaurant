@@ -130,7 +130,7 @@ nav > button:last-child {
 #content {
   grid-column: 1 / 4;
   grid-row: 2 / 3;
-  background-image: url('./img/dango.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/dango.png');
   background-size: cover;
   min-height: calc(100vh - 6rem);
   display: flex;
@@ -138,6 +138,7 @@ nav > button:last-child {
   padding: 4rem 8rem;
 }
 
+/*
 #content > div {
   flex: 1;
   display: flex;
@@ -154,5 +155,5 @@ nav > button:last-child {
   font-size: 2rem;
   color: var(--center-color);
   text-shadow: 1px 1px 2px var(--background-color);
-}
+}*/
 
