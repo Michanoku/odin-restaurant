@@ -9,8 +9,8 @@ const createSplash = (function() {
     const contentCreator = {
       title: 'Welcome to Three Dango Brothers',
       text1: 'Step into a cozy corner of Japan where tradition meets comfort. At Three Dango Brothers, we celebrate the simple joy of freshly made dango, soft, chewy rice dumplings glazed, grilled, and served with heart.',
-      text2: 'text', 'Whether you\'re craving the sweet harmony of sanshoku dango, the rich savor of mitarashi, or a seasonal specialty, our skewers are crafted to bring people together, just like the brothers in the song that inspired our name.',
-      text3: 'text', 'Come share a skewer (or three) and discover why dango has been a favorite treat for generations.',
+      text2: 'Whether you\'re craving the sweet harmony of sanshoku dango, the rich savor of mitarashi, or a seasonal specialty, our skewers are crafted to bring people together, just like the brothers in the song that inspired our name.',
+      text3: 'Come share a skewer (or three) and discover why dango has been a favorite treat for generations.',
     }
     // Create elements, add text content and append them to the container
     for (const key in contentCreator) {
