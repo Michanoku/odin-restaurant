@@ -6,7 +6,7 @@ const createSplash = (function() {
     content.textContent = '';
     // Create textcontainer for splash
     const textContainer = document.createElement('div');
-    textContainer.classList.add('text-container');
+    textContainer.setAttribute("id", "text-container");
     // Prepare text content for different elements
     const contentCreator = {
       title: 'Welcome to Three Dango Brothers',
