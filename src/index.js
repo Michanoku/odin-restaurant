@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { createSplash } from "./splash.js";
 import { createMenu } from "./menu.js";
-import { createAbout } from "./about.js";
+import { createContact } from "./contact.js";
 
 const initializeSite = (function () {
   function initialize() {
@@ -10,7 +10,7 @@ const initializeSite = (function () {
     const buttonAssignment = {
       0: createSplash,
       1: createMenu,
-      2: createAbout,
+      2: createContact,
     };
 
     for (const key in buttonAssignment) {

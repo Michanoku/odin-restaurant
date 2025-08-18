@@ -1,5 +1,5 @@
 
-const createAbout = (function() {
+const createContact = (function() {
   function create() {
     // Select content div already on page
     const content = document.querySelector('#content');
@@ -13,4 +13,4 @@ const createAbout = (function() {
 })();
 
 
-export { createAbout };
+export { createContact };
