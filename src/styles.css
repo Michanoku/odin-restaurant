@@ -23,6 +23,7 @@
   --center-color: #fffdec;
   --bottom-color: #ffbadf;
   --background-color: #c5a16f;
+  --background-color-muted: #9c8058;
   font-family: 'Yozakura Light', Arial, Helvetica, sans-serif;
 }
 
@@ -32,11 +33,39 @@
   margin: 0;
 }
 
-input {
+input, textarea {
   border: none;
   outline: none;
   background: transparent;
   font: inherit;
+}
+
+input[type="email"], textarea {
+  font-size: 1rem;
+  border: 1px solid var(--main-color);
+  border-radius: 25px;
+  padding: 5px 10px;
+  background-color: var(--center-color);
+  color: black;
+}
+
+input[type="text"]:focus, textarea:focus {
+  -webkit-box-shadow: inset 5px 4px 5px 0px var(--main-color);
+  box-shadow: inset 5px 4px 5px 0px var(--main-color);
+}
+
+button {
+  color: var(--main-color);
+  background-color: var(--background-color);
+  border-radius: 25px;
+  border: 1px solid var(--main-color);
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 0.6rem 2rem;
+}
+
+button:active {
+  background-color: var(--background-color-muted);
 }
 
 body {
@@ -138,7 +167,7 @@ nav > button:last-child {
   padding: 4rem 8rem;
 }
 
-#text-container, #menu-container {
+#text-container, #menu-container, #contact-container {
   display: flex;
   width: 100%;
   gap: 15px;
@@ -179,10 +208,10 @@ nav > button:last-child {
   text-shadow: 1px 1px 2px var(--background-color);
   text-align: start;
 }
+
 #menu-container > div > div {
   flex: 1;
   display: flex;
   justify-content: center;
   text-align: start;
 }
-
