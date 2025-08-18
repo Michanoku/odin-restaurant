@@ -33,7 +33,7 @@
   margin: 0;
 }
 
-input, textarea {
+input, textarea, button {
   border: none;
   outline: none;
   background: transparent;
@@ -214,4 +214,8 @@ nav > button:last-child {
   display: flex;
   justify-content: center;
   text-align: start;
+}
+
+#contact-container > div {
+  font-size: 1.5rem;
 }
