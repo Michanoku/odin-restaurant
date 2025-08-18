@@ -130,19 +130,18 @@ nav > button:last-child {
 #content {
   grid-column: 1 / 4;
   grid-row: 2 / 3;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./img/dango.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./img/sanshoku.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; 
   min-height: calc(100vh - 6rem);
-  display: flex;
-  flex-direction: column;
   padding: 4rem 8rem;
 }
 
-#text-container {
-  height: 100%;
+#text-container, #menu-container {
   display: flex;
+  width: 100%;
+  gap: 15px;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
@@ -163,19 +162,27 @@ nav > button:last-child {
 }
 
 #menu-container > div {
+  width: 100%;
   flex: 1;
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
 }
 
 #menu-container img {
-  width: 20vw;
-  height: auto;
+  height: 20vh;
+  width: auto;
 }
 
-#menu-container > div > div {
+#menu-container p {
   font-size: 2rem;
   color: var(--center-color);
   text-shadow: 1px 1px 2px var(--background-color);
+  text-align: start;
 }
+#menu-container > div > div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  text-align: start;
+}
+

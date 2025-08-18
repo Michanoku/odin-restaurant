@@ -1,4 +1,6 @@
-import dangoImg from './img/dango.png';
+import mitarashiImg from './img/mitarashi.png';
+import yokanImg from './img/yokan.png';
+import greenTeaImg from './img/greentea.png';
 
 const createMenu = (function() {
   function create() {
@@ -7,19 +9,24 @@ const createMenu = (function() {
     const menuContainer = document.createElement('div');
     menuContainer.setAttribute('id', 'menu-container');
     const menuCreator = {
-      0: [dangoImg, 'text'],
-      1: [dangoImg, 'text'],
-      2: [dangoImg, 'text'],
+      0: [mitarashiImg, 'Mitarashi Dango - ¥290'],
+      1: [yokanImg, 'Azuki Yokan - ¥190'],
+      2: [greenTeaImg, 'Green Tea - ¥120'],
     };
     for (const key in menuCreator) {
-      const div = document.createElement('div');
+      const containerDiv = document.createElement('div');
+      const imgDiv = document.createElement('div');
+      const textDiv = document.createElement('div');
       const image = document.createElement('img');
-      const text = document.createElement('div');
+      const text = document.createElement('p');
       image.src = menuCreator[key][0];
       text.textContent = menuCreator[key][1];
-      div.append(image, text);
-      menuContainer.appendChild(div);
+      imgDiv.appendChild(image);
+      textDiv.appendChild(text);
+      containerDiv.append(imgDiv, textDiv);
+      menuContainer.appendChild(containerDiv);
     };
+    content.appendChild(menuContainer);
     console.log("MENU!");
   }
 
