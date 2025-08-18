@@ -3,6 +3,7 @@ import dangoImg from './img/dango.png';
 const createMenu = (function() {
   function create() {
     const content = document.querySelector('#content');
+    content.textContent = '';
     const div1 = document.createElement('div');
     const div2 = document.createElement('div');
     const div3 = document.createElement('div');
